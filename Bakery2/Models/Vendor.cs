@@ -8,6 +8,7 @@ namespace Bakery.Models
         public string Description { get; set; }
         public int Id { get; }
         public static List<Order> orders = new List<Order> {};
+        public static List<Vendor> vendors = new List<Vendor> {};
 
         public Vendor (string name, string description)
         {

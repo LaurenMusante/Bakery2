@@ -9,11 +9,19 @@ namespace Bakery.Controllers
     public class BakeryController : Controller
 
     {
-        [HttpGet("/orders")]
+        [HttpGet("/vendors")]
         public ActionResult Index()
         {
-            List<Order> allOrders = Vendor.GetAll(); //because GetAll is a static method of my Vendor class
-            return View (allOrders);
+            List<Vendor> allVendors = Vendor.GetAll();
+            return View(alVendors);
         }
+
+        // [HttpGet("/vendors/new")]
+        // public ActionResult Index()
+        // {
+        //     List<Item> allItems = Item.GetAll();
+        //     return View(allItems);
+        // }
+
     }
 }
