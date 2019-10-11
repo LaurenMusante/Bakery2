@@ -22,5 +22,17 @@ namespace Bakery2.Controllers
                 return View();
         }
 
+        [HttpGet("/vendors/show")]
+            public ActionResult Show()
+        {
+            return View();
+        }
+
+        [HttpPost("/vendors/show")]
+        public ActionResult Create(string vendorName, string vendorDescription)
+        {
+            Vendor myVendor = new Vendor(vendorName, vendorDescription);
+            return RedirectToAction("Index");
+        }
     }
 }

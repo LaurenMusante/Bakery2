@@ -15,8 +15,8 @@ namespace Bakery2.Models
         {
             Name = name;
             Description = description;
-
-            Id = orders.Count;
+            vendors.Add(this);
+            // Id = orders.Count;
         }
 
         public static List<Vendor> GetAll()
