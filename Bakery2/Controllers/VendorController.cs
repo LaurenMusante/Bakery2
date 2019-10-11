@@ -6,7 +6,7 @@ using System;
 
 namespace Bakery2.Controllers
 {
-    public class Bakery2Controller : Controller
+    public class VendorController : Controller
 
     {
         [HttpGet("/vendors")]
