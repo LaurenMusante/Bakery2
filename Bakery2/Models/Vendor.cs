@@ -16,12 +16,12 @@ namespace Bakery2.Models
             Name = name;
             Description = description;
             vendors.Add(this);
-            // Id = orders.Count;
+            Id = vendors.Count; //what do I do with this?
         }
 
         public static List<Vendor> GetAll()
         {
-            return Vendor.vendors; //because it's static, it has to be Vendors.orders instead of just "orders." Like Math is a static method. Name of 
+            return Vendor.vendors; //because it's static, it has to be Vendors.orders instead of just "orders." Like Math is a static method. 
         }
 
         public static void ClearAll()

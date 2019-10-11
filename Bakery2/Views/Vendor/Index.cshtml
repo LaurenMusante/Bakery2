@@ -9,8 +9,11 @@
 <ul>
   @foreach (Vendor vendor in Vendor.vendors)
   {
-    <li><a href='/vendors'>@vendor.Description</a></li>
+    <li><a href='/vendors/details'>@vendor.Name</a></li>
+    
+ 
   }
 </ul>
 
 <a href="/vendors/new">Add a new vendor.</a>
+<a href="/">Go Home.</a>
