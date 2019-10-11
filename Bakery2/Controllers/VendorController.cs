@@ -1,27 +1,26 @@
 using Microsoft.AspNetCore.Mvc;
-using Bakery.Models;
+using Bakery2.Models;
 using System.Collections.Generic;
 using System;
 
 
-namespace Bakery.Controllers
+namespace Bakery2.Controllers
 {
-    public class BakeryController : Controller
+    public class Bakery2Controller : Controller
 
     {
         [HttpGet("/vendors")]
         public ActionResult Index()
         {
             List<Vendor> allVendors = Vendor.GetAll();
-            return View(alVendors);
+            return View(allVendors);
         }
 
-        // [HttpGet("/vendors/new")]
-        // public ActionResult Index()
-        // {
-        //     List<Item> allItems = Item.GetAll();
-        //     return View(allItems);
-        // }
+        [HttpGet("/vendors/new")]
+        public ActionResult New()
+        {
+                return View();
+        }
 
     }
 }

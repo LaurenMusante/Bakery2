@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 
-namespace Bakery.Models
+
+namespace Bakery2.Models
 {
     public class Vendor
     {
@@ -18,9 +19,9 @@ namespace Bakery.Models
             Id = orders.Count;
         }
 
-        public static List<Order> GetAll()
+        public static List<Vendor> GetAll()
         {
-            return Vendor.orders; //because it's static, it has to be Vendors.orders instead of just "order" Like Math is a static method. Name of 
+            return Vendor.vendors; //because it's static, it has to be Vendors.orders instead of just "orders." Like Math is a static method. Name of 
         }
 
         public static void ClearAll()
@@ -28,9 +29,9 @@ namespace Bakery.Models
             orders.Clear();
         }
 
-        public static Order Find(int searchId)
-        {
-            return orders[searchId-1]; //might not need this one
-        }
+        // public static Order Find(int searchId)
+        // {
+        //     return orders[searchId-1]; //might not need this one
+        // }
     }
 }
