@@ -13,13 +13,13 @@ namespace Bakery.Models
         {
             Name = name;
             Description = description;
-            orders.Add(this);
+
             Id = orders.Count;
         }
 
         public static List<Order> GetAll()
         {
-            return orders;
+            return Vendor.orders; //because it's static, it has to be Vendors.orders instead of just "order" Like Math is a static method. Name of 
         }
 
         public static void ClearAll()

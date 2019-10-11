@@ -12,7 +12,7 @@ namespace Bakery.Controllers
         [HttpGet("/orders")]
         public ActionResult Index()
         {
-            List<Order> allOrders = Order.GetAll();
+            List<Order> allOrders = Vendor.GetAll(); //because GetAll is a static method of my Vendor class
             return View (allOrders);
         }
     }

@@ -8,7 +8,6 @@ namespace Bakery.Models
         public string Description { get; set; }
         public int Price { get; set; }
         public int Date { get; set; }
-        public static List<Order> orders = new List<Order> { };
     
         public Order (string title, string description, int price, int date)
         {
@@ -16,11 +15,9 @@ namespace Bakery.Models
             Description = description;
             Price = price;
             Date = date;
+            Vendor.orders.Add(this);
         }
-        public static List<Order> GetAll()
-        {
-            return orders;
-        }
+
 
     }
 
