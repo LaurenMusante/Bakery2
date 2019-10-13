@@ -35,11 +35,10 @@ namespace Bakery2.Controllers
             return RedirectToAction("Index");
         }
 
-        [HttpPost("/vendors/details")]
+        [HttpGet("/vendors/{Id}")]
         public ActionResult Show(int Id)
         {
-            // Vendor myVendor = new Vendor(vendorName, vendorDescription);
-            return RedirectToAction("Index");
+            return View(Vendor.vendors[Id - 1]);
         }
     }
 }
