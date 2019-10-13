@@ -2,15 +2,17 @@
 @using Bakery2.Models;
 
 <h1>Vendor Details</h1>
+<h3>Click Vendor Name to add a new order</h3>
 
 <ul>
-  @foreach (Vendor vendor in Vendor.vendors)
-  {
-    <li><p>Vendor Name:</p><a href='/vendors/details'>@vendor.Name</a></li>
-    <li><p>Vendor Description:</p><a href='/vendors/details'>@vendor.Description</a></li>
-    <li><p>Vendor ID Number:</p><a href='/vendors/details'>@vendor.Id</a></li>
+    <li><p>Vendor Name:</p><a href="/vendors/@Model.Id/orders/new">@Model.Name</a></li>
+    <li><p>Vendor Description:</p>@Model.Description</li>
+    <li><p>Vendor ID Number:</p>@Model.Id</li>
     <br>
-  }
+
+  
+
 </ul>
 
 <a href="/vendors/new">Add a new vendor.</a>
+<a href="/">Go back Home</a>

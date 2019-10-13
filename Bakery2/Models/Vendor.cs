@@ -8,7 +8,7 @@ namespace Bakery2.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public int Id { get; }
-        public static List<Order> orders = new List<Order> {};
+        public List<Order> orders = new List<Order> {};
         public static List<Vendor> vendors = new List<Vendor> {};
 
         public Vendor (string name, string description)
@@ -24,10 +24,10 @@ namespace Bakery2.Models
             return Vendor.vendors; //because it's static, it has to be Vendors.orders instead of just "orders." Like Math is a static method. 
         }
 
-        public static void ClearAll()
-        {
-            orders.Clear();
-        }
+        // public static void ClearAll()
+        // {
+        //     orders.Clear();
+        // }
 
         // public static Order Find(int searchId)
         // {

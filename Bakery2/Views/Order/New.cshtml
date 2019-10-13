@@ -1,0 +1,20 @@
+@using Bakery2.Models;
+
+<h1> Add an Order </h1>
+
+  <form action="/orders/show" method="post">
+  <label for="vendorName">Vendor name:</label>
+  <input id="vendorName" name="vendorName" type="text">
+  <label for="orderTitle">What product are you ordering?</label>
+  <input id="orderTitle" name="orderTitle" type="text">
+  <label for="orderQuantity">How many does the vendor need?</label>
+  <input id="orderQuantity" name="orderQuantity" type="text">
+  <label for="orderPrice">Order price:</label>
+  <input id="orderPrice" name="orderPrice" type="text">
+  <label for="orderDate">Today's date:</label>
+  <input id="orderDate" name="orderDate" type="text">
+  <input type="hidden" name="vendorID" value=@Model.Id>
+  
+  <button type="submit">Submit</button> 
+</form>       
+       
