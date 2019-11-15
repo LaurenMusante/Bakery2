@@ -10,12 +10,6 @@ _This is a website for Pierre, the owner of the bakery from Week 9's independent
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
 _Clone [this repository](https://github.com/LaurenMusante/Bakery2) to your desktop. Navigate to the root directory in Terminal, then navigate to "Bakery 2". Run "dotnet watch run," then alt-click on "http://localhost:5000"._
 
 ## Known Bugs
